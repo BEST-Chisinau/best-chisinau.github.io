@@ -19,9 +19,9 @@ description: > # this means to ignore newlines until "baseurl:"
   BEST Chisinau is a student organization
   BEST Chisinau is a student organization
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://best-chisinau.github.io/best-chisinau.org/" # the base hostname & protocol for your site
+url: "https://best-chisinau.github.io/" # the base hostname & protocol for your site
 twitter_username: BEST_Chisinau
-github_username:  best-chisinau
+github_username:  BEST-Chisinau
 
 # Build settings
 markdown: kramdown
