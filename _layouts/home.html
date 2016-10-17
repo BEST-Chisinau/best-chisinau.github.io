@@ -1,0 +1,91 @@
+{% include header.html %}
+
+  <div id="home-parallax">
+    <div id="homeBanner" class="hasBackground" style="background-image:url({{ 'assets/images/home-parallax.jpg' | relative_url }})">
+      <div class="info-text" >
+        <h1>BEST Chisinau – Developing students</h1>
+        <p>We are <b>BEST</b>. We are students and our missions is <b>developing students</b>. We are over 40 young future <b>engineers</b>. We are passionate about <b>technology</b> and <b>different ways</b> of thinking. We are Board of European Students of Technology in Chisinau.</p>
+      </div>
+      <div id="downButton"></div>
+    </div>
+  </div>
+
+  <div id="main-content">
+
+    <div class="container">
+      <h2>Noutăți</h2>
+      <div class="row">
+        <div class="content-p col-md-8 col-md-offset-2 clearfix">
+          <p>Descoperă ultimele noastre noutăți</p>
+        </div>
+      </div>
+      <div id="content" class="clearfix row">
+
+        <div id="main" >
+          <div class="grid-sizer"></div>
+            <?php
+              $query = new WP_Query(array( 'post_type' => array('post', 'events_post_type'), 'posts_per_page' => 9));
+
+              if ( $query -> have_posts() ) :
+                while ( $query -> have_posts() ) :
+                  $query -> the_post();
+            ?>
+                <article id="post-<?php the_ID(); ?>" class="post-container <?php if ($query->current_post === 0) echo 'last col-sm-4 col-md-6'; else echo 'col-sm-4 col-md-3'; ?>">
+                  <div class="post-inside">
+                    <div class="post-image">
+                      <a href="<?php the_permalink(); ?>">
+                        <?php if ($query->current_post === 0) the_post_thumbnail('large'); else the_post_thumbnail('medium');?>
+                      </a>
+                    </div>
+                    <div class="post-content">
+                      <header class="post-header">
+                        <h4 class="post-title">
+                          <a href="<?php the_permalink(); ?>">
+                            <?php the_title(); ?>
+                          </a>
+                        </h4>
+                      </header>
+                      <div class="post-date">
+                        <?php printf( '<time class="entry-date" datetime="%1$s">%2$s</time>',
+                          esc_attr( get_the_date( 'c' ) ),
+                          esc_html( get_the_date() ) );
+                        ?>
+                      </div>
+
+                    </div>
+                    <div class="post-footer clearfix">
+                      <span class="post-comments"><i class="fa fa-comment-o fa-fw"></i><?php comments_popup_link( '0', '10', '%', 'comments-link'); ?></span>
+                      <div class="post-more"><a href="<?php the_permalink(); ?>"><?php the_field('text_button'); ?></a></div>
+                    </div>
+                  </div>
+                </article>
+
+              <?php
+                endwhile;
+              endif;
+
+              wp_reset_query();
+            ?>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <?php $image = get_field('hp_2parallax');
+  $style = esc_url( $image );  ?>
+
+  <div id="info-parallax">
+    <div id="info-box" class="hasBackground" style="background-image:url(<?php echo apply_filters( 'jetpack_photon_url', $style ); ?>)">
+
+      <div class="info-text" >
+
+        <?php the_field('hp_2img'); ?>
+
+      </div>
+
+    </div>
+  </div>
+
+{% include footer.html %}

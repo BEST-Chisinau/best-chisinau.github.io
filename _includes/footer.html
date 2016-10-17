@@ -1,0 +1,67 @@
+  <div id="partners">
+    <div class="container">
+
+      <?php
+        $currentlang = get_bloginfo('language');
+
+        if($currentlang=="ro-RO"): ?>
+          <h2>Parteneri</h2>
+          <div class="row"><div class="gen_partners">
+            <h3 class="partners_header">Partener general</h3>
+            <?php categorySlugPosts('partener-general'); ?>
+          </div>
+          <div class="part_partners">
+            <h3 class="partners_header">Parteneri</h3>
+            <?php categorySlugPosts('partener'); ?>
+          </div>
+          <div class="support_partners">
+            <h3 class="partners_header">Parteneri suporter</h3>
+            <?php categorySlugPosts('partener-suporter'); ?>
+          </div></div>
+          <div class="media_partners">
+            <h3 class="partners_header">Parteneri media</h3>
+            <?php categorySlugPosts('partener-media'); ?>
+          </div>
+        <?php else: ?>
+          <h2>Partners</h2>
+          <div class="gen_partners">
+            <h3 class="partners_header">General partner</h3>
+            <?php categorySlugPosts('general-partner'); ?>
+          </div>
+          <div class="part_partners">
+            <h3 class="partners_header">Partners</h3>
+            <?php categorySlugPosts('partner'); ?>
+          </div>
+          <div class="support_partners">
+            <h3 class="partners_header">Supporter partners</h3>
+            <?php categorySlugPosts('supporter-partner'); ?>
+          </div>
+          <div class="media_partners">
+            <h3 class="partners_header">Media partners</h3>
+            <?php categorySlugPosts('media-partner'); ?>
+          </div>
+        <?php endif; ?>
+
+    </div>
+  </div>
+
+  <footer id="footer">
+    <div class="container">
+      <div class="col-md-6">
+        <p class="attribution">BEST Chișinău &copy; {{ 'now' | date: "%Y" }}</p>
+      </div>
+      <div class="col-md-6 credit">
+        <p><a href="https://github.com/BEST-Chisinau/best-chisinau.github.io">Edit this page</a></p>
+      </div>
+    </div>
+  </footer>
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+  <script src="{{ 'assets/old/js/functions.js?ver=20140319' | relative_url}}"></script>
+  <script src="{{ 'assets/old/js/bootstrap.min.js?ver=1.2' | relative_url}}"></script>
+  <script src="{{ 'assets/old/js/isotope.min.js?ver=4.1.13' | relative_url}}"></script>
+  <script src="{{ 'assets/old/js/modernizr.min.js?ver=2.8.3' | relative_url}}"></script>
+  <script src="{{ 'assets/old/js/pageslide.min.js?ver=4.1.13' | relative_url}}"></script>
+  <script src="{{ 'assets/old/js/script.js?ver=1' | relative_url}}"></script>
+
+</body>
+</html>
