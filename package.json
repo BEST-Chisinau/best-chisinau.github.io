@@ -1,0 +1,19 @@
+{
+  "name": "best-chisinau.org",
+  "version": "1.0.0",
+  "description": "best-chisinau.org website",
+  "scripts": {
+    "start": "bundle exec jekyll serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BEST-Chisinau/best-chisinau.github.io.git"
+  },
+  "author": "best chisinau",
+  "bugs": {
+    "url": "https://github.com/BEST-Chisinau/best-chisinau.github.io/issues"
+  },
+  "homepage": "best-chisinau.org",
+  "devDependencies": {},
+  "dependencies": {}
+}
