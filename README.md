@@ -9,4 +9,4 @@
 
 ## Local development
 
-* Run `bundle exec jekyll serve`
+* Run `bundle exec jekyll serve --config _config.yml,dev_config.yml` or `npm start` (does the same thing)
