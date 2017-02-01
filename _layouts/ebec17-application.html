@@ -6,17 +6,20 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Aplică</title>
 
-				<link rel="shortcut icon" href="img/favicon.ico">
+				<link rel="shortcut icon" href="{{ site.url }}/assets/images/favicon.ico">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
 <!-- Bootstrap -->
 <link rel="stylesheet" type="text/css"  href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.2/css/bootstrap.min.css">
 
 
-<link href="../css/style.css" rel="stylesheet" media="screen">
+<!-- <link href="../css/style.css" rel="stylesheet" media="screen">
 		<link rel="stylesheet" type="text/css" href="css/demo.css" />
-		<link rel="stylesheet" type="text/css" href="css/component.css" />
+		<link rel="stylesheet" type="text/css" href="css/component.css" /> -->
 
+		<link href="{{ site.url }}/assets/css/ebec.css" rel="stylesheet" media="screen">
+				<link rel="stylesheet" type="text/css" href="{{ site.url }}/assets/css/demo.css" />
+				<link rel="stylesheet" type="text/css" href="{{ site.url }}/assets/css/component.css" />
 	</head>
 	<body>
 
@@ -653,8 +656,9 @@ style="display:none;" onload="if(submitted)
 		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.2/js/bootstrap.min.js"></script>
 
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
-		<script src="js/classie.js"></script>
-		<script src="js/cbpSplitLayout.js"></script>
+		<script src="{{ site.url }}/assets/css/cbpSplitLayout.js"></script>
+		<script src="{{ site.url }}/assets/css/classie.js"></script>
+
 <script>
 var showMessage= function () {
   var message = document.querySelector("#thankyou")
