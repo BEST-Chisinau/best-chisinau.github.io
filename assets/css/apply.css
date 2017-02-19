@@ -50,8 +50,20 @@ h6 {
   margin: 0 auto;
 }
 .img-team {
-  height: 250px;
-  width: 250px;
+  height: 200px;
+  width: 200px;
+}
+.img-logo {
+  height: 60px;
+}
+.media-partners {
+  margin-top: 50px;
+}
+.timeline-image a,.timeline-image a:hover {
+  color: white;
+}
+.about-motto {
+  font-style: italic;
 }
 .bg-light-gray {
   background-color: #eeeeee;
@@ -183,13 +195,13 @@ fieldset[disabled] .btn-xl.active {
 .navbar-custom .nav li a {
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
-  font-weight: 400;
+  font-weight: 600;
   letter-spacing: 1px;
   color: #c52126;
 }
 .navbar-custom .nav li a:hover,
 .navbar-custom .nav li a:focus {
-  color: #c52126;
+  color: white;
   outline: none;
 }
 .navbar-custom .navbar-nav > .active > a {
@@ -201,6 +213,17 @@ fieldset[disabled] .btn-xl.active {
 .navbar-custom .navbar-nav > .active > a:focus {
   color: white;
   background-color: #c52126;
+}
+.affix .nav li a:hover{
+  text-decoration: underline;
+}
+.navbar-custom .nav li a:focus {
+  color: #c52126;
+  outline: none;
+}
+.affix .nav li a,
+.affix .nav li a:focus{
+  color: white;
 }
 @media (min-width: 768px) {
   .navbar-custom {
@@ -286,12 +309,12 @@ header .intro-text .intro-heading {
   }
 }
 section {
-  padding: 100px 0;
+  padding: 50px 0;
 }
 section h2.section-heading {
   font-size: 40px;
-  margin-top: 0;
-  margin-bottom: 15px;
+  margin-top: 15px;
+  margin-bottom: 100px;
 }
 section h3.section-subheading {
   font-size: 16px;
@@ -303,10 +326,11 @@ section h3.section-subheading {
 }
 @media (min-width: 768px) {
   section {
-    padding: 150px 0;
+    padding: 100px 0;
   }
 }
 .service-heading {
+  height: 38px;
   margin: 15px 0;
   text-transform: none;
 }
@@ -536,7 +560,7 @@ section h3.section-subheading {
     margin-left: -85px;
   }
   .timeline > li .timeline-image h4 {
-    margin-top: 40px;
+    margin-top: 55px;
   }
   .timeline > li.timeline-inverted > .timeline-panel {
     padding: 0 100px 20px 20px;
@@ -559,7 +583,7 @@ section h3.section-subheading {
   margin-top: 0;
 }
 aside.clients img {
-  margin: 50px auto;
+  margin: 20px auto;
 }
 section#contact {
   background-color: #222222;
