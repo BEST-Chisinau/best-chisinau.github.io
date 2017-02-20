@@ -65,6 +65,9 @@ h6 {
 .about-motto {
   font-style: italic;
 }
+.header-organized {
+  margin-top: 50px;
+}
 .bg-light-gray {
   background-color: #eeeeee;
 }
@@ -254,6 +257,7 @@ fieldset[disabled] .btn-xl.active {
   }
 }
 header {
+  background-image: url('../img/header-bg.png');
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
