@@ -1230,15 +1230,17 @@ filter: grayscale(0%);
 }
 
 #thankyou {
-  	/*visibility: hidden;*/
-	display: none;
-/*  background-color: yellow;*/
-	/*padding-top: 180px;*/
-	/*margin-top: 150px;*/
-	font-size: 26px;
-	color: #fff;
 
+	display: none;
+	color: #fff;
+	margin-top: 50px;
 }
+
+#thankyou h2 {
+	/*margin-top: 10px;*/
+	font-size: 20px;
+}
+
 .helloTest h1 {
 	font-size: 4.5em;
 }
