@@ -6,9 +6,77 @@ html, body,
 }
 
 body {
-	overflow-y: scroll;
+	overflow: hidden;
 	background: #ecf0f1;
 }
+
+
+#preloader {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  /*background-color: #f5f5f5;*/
+	  background-color: #191919;
+		opacity: 0.95;
+  /* change if the mask should have another color then white */
+  z-index: 999999;
+  /* makes sure it stays on top */
+}
+
+#status {
+
+  /*left: 45%;
+  top: 45%;*/
+	  /*position: absolute;*/
+		margin: auto;
+	  position: absolute;
+	  top: 0; left: 0; bottom: 0; right: 0;
+  /* centers the loading animation vertically one the screen */
+  /* is width and height divided by two */
+}
+
+.spinner-sm {
+  width: 150px;
+  height: 150px;
+  background-image: url(https://i.imgur.com/k3CNAD3.png);
+  /*background-size: 40%;*/
+  background-position: center center;
+  background-repeat: no-repeat;
+  /*background-color: #214577;*/
+  /*border-radius: 50%;*/
+	  animation: spinny 1.8s linear infinite;
+}
+
+}
+@keyframes spinny {
+  0% {
+    transform: rotate(0deg) scale(1);
+  }
+  50% {
+    transform: rotate(90deg) scale(1.5);
+  }
+  100% {
+    transform: rotate(360deg) scale(1);
+  }
+}
+@keyframes spinny {
+  0% {
+    transform: rotate(0deg) scale(1);
+  }
+  50% {
+    transform: rotate(90deg) scale(1.5);
+  }
+  100% {
+    transform: rotate(360deg) scale(1);
+  }
+}
+
+/*preloader*/
+
+
 
 .splitlayout {
 	position: relative;
@@ -54,15 +122,15 @@ body {
 
 .side-left {
 	left: 0;
-	background: #2c3e50;
-	color: #666666;
+	background: #191919;
+	color: #775112;
 	/* outline: 1px solid #47a3da;  avoid gap */
 }
 
 .side-right {
 	right: 0;
-	background: #2c3e50;
-	color: #666666;
+	background: #191919;
+	color: #775112;
 	/*outline: 1px solid #fff; *//* avoid gap */
 }
 
@@ -80,10 +148,14 @@ body {
 
 .profile {
 	margin: 0 auto;
-	width: 140px;
-	height: 140px;
+	/*width: 140px;
+	height: 140px;*/
 	border-radius: 50%;
 	/*background: #47a3da;*/
+}
+.profile-icons {
+	font-size: 6em;
+	padding: 5px;
 }
 
 .profile img {
@@ -145,7 +217,7 @@ body {
 	border-radius: 50%;
 	color: #fff;
 	text-align: center;
-	font-size: 30px;
+	font-size: 40px;
 	line-height: 44px;
 	opacity: 0;
 	pointer-events: none;
@@ -378,13 +450,13 @@ body {
 
 
 .side-left:hover {
-	background-color: #33485d;
+	background-color: #2f2f2f;
 	color: #eea225;
 
 }
 
 .side-right:hover {
-	background-color: #33485d;
+	background-color: #2f2f2f;
 	color: #eea225;
 }
 /*#thankyou {
@@ -553,4 +625,15 @@ input {
 .form-group {
   margin-bottom: 0;
   text-align: left;
+}
+
+#wrapper h2 {
+	margin-top: 20px;
+	font-size: 24px;
+	font-weight: 400;
+}
+#wrapper2 h2 {
+	margin-top: 20px;
+	font-size: 24px;
+	font-weight: 400;
 }
