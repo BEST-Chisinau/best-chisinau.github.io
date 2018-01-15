@@ -31,7 +31,7 @@ Aceasta este organizată de BEST Chișinău exclusiv pentru studenții Universit
 
 <link rel="stylesheet" type="text/css"  href="{{ site.url }}/assets/css/ebec.css">
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
 </head>
 
@@ -75,6 +75,7 @@ Aceasta este organizată de BEST Chișinău exclusiv pentru studenții Universit
         <li><a href="#works-section" class="page-scroll">Fotografii</a></li>
         <li><a href="#team-section" class="page-scroll">Organizatori</a></li>
         <li><a href="#testimonials-section" class="page-scroll">Parteneri</a></li>
+        <li><a href="#blog" class="page-scroll">Blog</a></li>
         <!-- <li><a href="application-page/application.html"  id="buton-aplica">Aplică! -->
         <<li><a href="{{ site.url }}/ebec18/application"  id="buton-aplica">Aplică!</a></li>
       </ul>
@@ -673,14 +674,14 @@ Aceasta este organizată de BEST Chișinău exclusiv pentru studenții Universit
 
 <!-- Testimonials Section -->
 <div id="testimonials-section" class="text-center container full footer-c">
-  <div class="container set wow fadeInDown">
-    <div class="section-title wow fadeInDown">
+  <div class="container set wow fadeIn">
+    <div class="section-title wow fadeIn">
       <h2><strong>Parteneri</strong></h2>
       <hr>
     </div>
 <br>
 
- <div class="row wow fadeInUp">
+ <div class="row wow fadeIn">
           <h3>Parteneri generali:</h3>
           <div class="col-lg-2 col-md-2 col-sm-3 col-xs-6"><div class="mid">
              <a href="http://www.utm.md/" target="_blank">
@@ -747,7 +748,7 @@ Aceasta este organizată de BEST Chișinău exclusiv pentru studenții Universit
           </div></div>
 </div>-->
 
- <div class="row wow fadeInUp">
+ <div class="row wow fadeIn">
           <h3>Suporteri:</h3>
           <div class="col-lg-2 col-md-2 col-sm-3 col-xs-6"><div class="mid">
          <a href="#" target="_blank">
@@ -807,7 +808,7 @@ Aceasta este organizată de BEST Chișinău exclusiv pentru studenții Universit
 </div>
 
 
-          <div class="row wow fadeInUp">
+          <div class="row wow fadeIn">
           <h3>Parteneri media:</h3>
           <div class="col-lg-2 col-md-2 col-sm-3 col-xs-6"><div class="mid">
          <a href="#" target="_blank">
@@ -865,7 +866,26 @@ Aceasta este organizată de BEST Chișinău exclusiv pentru studenții Universit
 
 
 <!-- Contact Section -->
-
+<!-- Blog-->
+<section class="section blog" id="blog">
+  <div class="container">
+    <!---->
+    <header class="section-heading text-center blog-heading">
+      <div class="section-title wow fadeIn">
+        <h2><strong>Blog BEST Chişinău</strong></h2>
+        <hr>
+      </div>
+    </header>
+    <!---->
+    <div class="section-content" id="blogContent">
+      <div class="row" id="jsonContent"></div>
+    </div>
+    <!-- /#blogContent-->
+    <div class="text-center"><a class="btn btn-warning wow fadeIn" id="loadBlogPosts" href="https://medium.com/@BEST_Chisinau" target="_blank">Vezi toate <span class="fa fa-angle-double-right"></span></a></div>
+  </div>
+  <!-- /.container-->
+</section>
+<!-- Blog-->
 
 
 
