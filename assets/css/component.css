@@ -572,3 +572,106 @@ input {
 	font-size: 24px;
 	font-weight: 400;
 }
+
+/*
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+.side-right {
+	background-color: #2f2f2f;
+  color: #eea225;
+	/*animation: pulse 5s infinite;*/
+}
+.side-right .intro-content {
+		animation: pulse2 3s infinite;
+}
+@keyframes pulse2 {
+	0% {
+		color: #f9e3bd;
+	}
+	100% {
+		color: #eea225;
+	}
+
+}
+.side-left {
+	background-color: #2f2f2f;
+  color: #eea225;
+}
+.side-left .intro-content {
+		animation: pulse1 3s infinite;
+}
+@keyframes pulse1 {
+	0% {
+		color:  #eea225;
+	}
+	100% {
+		color: #f9e3bd;
+	}
+}
+	.side-right:hover {
+	    background: #191919;
+	    color: #775112;
+		}
+			.side-left:hover {
+			    background: #191919;
+			    color: #775112;
+				}
+
+}
+
+/*
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+	.side-right {
+		background-color: #2f2f2f;
+	  color: #eea225;
+
+	}
+	.side-right .intro-content {
+			animation: pulse2 3s infinite;
+			transition: all .2s ease-in-out;
+	}
+	@keyframes pulse2 {
+	  0% {
+	    color: #f9e3bd;
+	  }
+	  100% {
+	    color: #eea225;
+	  }
+
+	}
+
+	.side-left {
+		background-color: #2f2f2f;
+	  color: #eea225;
+	}
+
+.side-left .intro-content {
+		animation: pulse1 3s infinite;
+		transition: all .2s ease-in-out;
+}
+@keyframes pulse1 {
+	0% {
+		color:  #eea225;
+	}
+	100% {
+		color: #f9e3bd;
+	}
+}
+	.side-right:hover {
+	    background: #191919;
+	    color: #775112;
+		}
+
+		.side-left:hover {
+		    background: #191919;
+		    color: #775112;
+			}
+
+}
