@@ -603,6 +603,7 @@ input {
 .side-left .intro-content {
 		animation: pulse1 3s infinite;
 }
+
 @keyframes pulse1 {
 	0% {
 		color:  #eea225;
@@ -633,9 +634,36 @@ input {
 	  color: #eea225;
 
 	}
+	/*.proba-CS {
+		-webkit-transform-origin: 0 0;
+    -ms-transform-origin: 0 0;
+    transform-origin: 0 0;
+      -webkit-animation: scaleCS 1s ease-in-out infinite alternate;
+    animation: scaleCS 1s ease-in-out infinite alternate;
+	}
+	@-webkit-keyframes scaleCS {
+	    0% {
+	        -webkit-transform: scale(1.05);
+	    }
+	    100% {
+	        -webkit-transform: scale(1.10);
+	    }
+	}
+
+	@keyframes scaleCS {
+	    0% {
+	        transform: scale(1.05);
+	    }
+	    100% {
+	        transform: scale(1.10);
+	    }
+	}*/
+	.proba-TD {
+		transition: all .2s ease-in-out;
+	}
+
 	.side-right .intro-content {
 			animation: pulse2 3s infinite;
-			transition: all .2s ease-in-out;
 	}
 	@keyframes pulse2 {
 	  0% {
@@ -654,7 +682,6 @@ input {
 
 .side-left .intro-content {
 		animation: pulse1 3s infinite;
-		transition: all .2s ease-in-out;
 }
 @keyframes pulse1 {
 	0% {
