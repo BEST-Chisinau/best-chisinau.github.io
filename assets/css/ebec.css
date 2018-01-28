@@ -91,8 +91,8 @@ h3 {
 	font-weight: 700;
 }
 h5 {
-	text-transform: uppercase;
-	font-weight: 700;
+	/*text-transform: uppercase;*/
+	font-weight: 600;
 	line-height: 20px;
 }
 p {
@@ -477,6 +477,7 @@ ol.type li a:hover {
 #team-section {
 	background-color: #f5f5f5;
 	padding-top: 40px;
+	padding-bottom: 40px;
 }
 #team-section .item {
 	padding: 0;
@@ -588,7 +589,7 @@ filter: grayscale(0%);
 }
 /* Testimonials Section */
 #testimonials-section {
-/*	padding: 80px 0;*/
+	padding: 50px 0;
 	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#2c3e50+0,032e3a+20,032e3a+100,032731+100 */
 	background: #fff;
 	color: #34495e;
@@ -1140,14 +1141,14 @@ filter: grayscale(0%);
 .footer-c .row h3 {
     margin-top: 20px;
 }
-.footer-c .col-md-2,
+/*.footer-c .col-md-2,
 .footer-c .col-md-6,
 .footer-c .col-md-4,
 .footer-c .col-md-12 {
     height: 100px;
     padding: 0;
     margin-top: 20px
-}
+}*/
 .footer-c a {
     display: table-cell;
     height: 100px;
@@ -1156,15 +1157,27 @@ filter: grayscale(0%);
 .footer-c h1 {
     margin-bottom: 20px
 }
-.footer-c .mid {
-    width: 100px;
+/*.footer-c .mid {
+    width: 300px;
     margin-right: auto;
     margin-left: auto;
     display: block
-}
+}*/
+/*.footer-c .mid {
+	margin-bottom: 50px;
+}*/
 .footer-c img {
     display: block;
-    margin: auto;
+
+}
+.general-ptn {
+	 max-width: 120%;
+	/*box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.2), 0 1px 4px 0 rgba(0, 0, 0, 0.19);*/
+	/*-webkit-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 1px 3px 0 rgba(0, 0, 0, 0.19);
+	-moz-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 1px 3px 0 rgba(0, 0, 0, 0.19);
+	box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 1px 3px 0 rgba(0, 0, 0, 0.19);*/
+	padding: 10px;
+	margin-bottom: 30px;
 }
 
 @media (min-width: 768px) {
