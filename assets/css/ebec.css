@@ -1168,16 +1168,16 @@ filter: grayscale(0%);
 }*/
 .footer-c img {
     display: block;
-
+		-webkit-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 1px 3px 0 rgba(0, 0, 0, 0.19);
+		-moz-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 1px 3px 0 rgba(0, 0, 0, 0.19);
+		box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 1px 3px 0 rgba(0, 0, 0, 0.19);
+		padding: 10px;
+		margin-bottom: 30px;
 }
 .general-ptn {
-	 max-width: 120%;
+	 /*max-width: 120%;*/
 	/*box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.2), 0 1px 4px 0 rgba(0, 0, 0, 0.19);*/
-	/*-webkit-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 1px 3px 0 rgba(0, 0, 0, 0.19);
-	-moz-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 1px 3px 0 rgba(0, 0, 0, 0.19);
-	box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 1px 3px 0 rgba(0, 0, 0, 0.19);*/
-	padding: 10px;
-	margin-bottom: 30px;
+
 }
 
 @media (min-width: 768px) {
