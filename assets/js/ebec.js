@@ -26,10 +26,16 @@ main();
 // blog
 $(function () {
 	var $content = $('#jsonContent');
-	var data = {
-		rss_url: 'https://medium.com/feed/@BEST_Chisinau'
-	};
-	$.get('https://api.rss2json.com/v1/api.json', data, function (response) {
+  // var data = {
+	// 	rss_url: 'https://medium.com/feed/@BEST_Chisinau',
+	// };
+var url0 = 'https://api.rss2json.com/v1/api.json?';
+var url1 = 'rss_url=https%3A%2F%2Fmedium.com%2Ffeed%2F%40BEST_Chisinau%2F';
+var url2 = '&api_key=4gyoliaj0zppav1txsynnn234owq5m8aj5vwybaq';
+var urlTest = url0 + url1 + url2;
+
+$.get(urlTest,  function (response) {
+	// $.get('https://api.rss2json.com/v1/api.json', data, function (response) {
 		if (response.status == 'ok') {
 			var output = '';
 			$.each(response.items, function (k, item) {
